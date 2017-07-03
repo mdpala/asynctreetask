@@ -11,7 +11,7 @@ from collections import defaultdict
 
 class Task:
     '''
-        A task which will hold a coroutine execeutable when running the callable protocol.
+        A task which will hold a coroutine executable when running the callable protocol.
         It may have children tasks held in the subTasks list
     '''
     __slots__ = ('id', 'coro', 'onDone', 'cancelFunc', 'state', 'result', 'exception', 'parentId', 'successCondition', 'subTasks', 'name', 'description')
